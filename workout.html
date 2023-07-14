@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	
+		
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="manifest"  href="manifest.json">
+		<meta name="theme-color">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Progressvie Web Application: MAD2</title>
+		<script src="./service-worker.js"></script>
+		
+
+
+		<!-- font awesome cdn link  -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+		/>
+
+		<!-- custom css file link  -->
+		<link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/workout.css" />
+
+	</head>
+	<body>
+		<!-- header section starts      -->
+
+		<header class="header">
+			<a href="#" class="logo"> <span>PRIME</span>SURVIVAL</a>
+
+			<div id="menu-btn" class="fas fa-bars"></div>
+
+			<nav class="navbar">
+				<a href="home.html">home</a>
+				<a href="home.html">about</a>
+				<a href="home.html">trainers</a>
+				<a href="calculator.html">BMRcalculator</a>
+				<a href="workout.html">Workouts</a>
+				<a href="home.html">blogs</a>
+				<a href="index.php">Logout</a>
+			</nav>
+			<img src="images/moon.png" id="icon">
+		</header>
+
+		<!-- header section ends     -->
+
+        <body>
+            <h1>Muscle Building Workouts</h1>
+            
+            <table>
+              <caption class="caption">Beginner</caption>
+              <thead>
+                <tr>
+                  <th>Exercise</th>
+                  <th>Sets</th>
+                  <th>Reps</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Bench Press</td>
+                  <td>3</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Squat</td>
+                  <td>3</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Deadlift</td>
+                  <td>3</td>
+                  <td>10</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <table>
+              <caption class="caption">Intermediate</caption>
+              <thead>
+                <tr>
+                  <th>Exercise</th>
+                  <th>Sets</th>
+                  <th>Reps</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Barbell Rows</td>
+                  <td>4</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Overhead Press</td>
+                  <td>4</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Leg Press</td>
+                  <td>4</td>
+                  <td>8</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <table>
+              <caption class="caption">Advanced</caption>
+              <thead>
+                <tr>
+                  <th>Exercise</th>
+                  <th>Sets</th>
+                  <th>Reps</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Dumbbell Bench Press</td>
+                  <td>5</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>Front Squat</td>
+                  <td>5</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>Sumo Deadlift</td>
+                  <td>5</td>
+                  <td>6</td>
+                </tr>
+              </tbody>
+            </table>
+
+
+            
+		<!-- footer section starts  -->
+
+		<section class="footer">
+			<div class="box-container">
+
+				<div class="box">
+					<h3>opening hours</h3>
+					<p>monday : <i> 5:00am - 10.00pm </i></p>
+					<p>tuesday : <i> 5:00am - 10.00pm </i></p>
+					<p>wednesday : <i> 5:00am - 10.00pm </i></p>
+					<p>friday : <i> 5:00am - 10.00pm</i></p>
+					<p>saturday : <i> 7:00am - 6.00pm </i></p>
+					<p>sunday : <i> 7:00am - 6.00pm </i></p>
+				</div>
+
+				<div class="box">
+					<h3>opening hours</h3>
+					<p><i class="fas fa-phone"></i> +94 70 142 7434</p>
+					<p><i class="fas fa-phone"></i> +94 76 881 7891</p>
+					<p><i class="fas fa-envelope"></i> primesurvival@gmail.com</p>
+					<p><i class="fas fa-map"></i> Colombo, Sri Lanka</p>
+					<div class="share">
+						<a href="#" class="fab fa-facebook-f"></a>
+						<a href="#" class="fab fa-twitter"></a>
+						<a href="#" class="fab fa-linkedin"></a>
+						<a href="#" class="fab fa-pinterest"></a>
+					</div>
+				</div>
+
+				<div class="box">
+					<h3>newsletter</h3>
+					<p>subscribe for latest updates</p>
+					<form action="">
+						<input
+							type="email"
+							name=""
+							class="email"
+							placeholder="enter your email"
+							id=""
+						/>
+						<input type="submit" value="subscribe" class="btn" />
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<div class="credit">
+			created by <span>Chamuditha Siyambalapitiya</span> | Copyright 2023
+		</div>
+
+        <script>
+			window.addEventListener("DOMContentLoaded", function() {
+			  var icon = document.getElementById("icon");
+		  
+			  icon.onclick = function(){
+				document.body.classList.toggle("dark-theme");
+				if(document.body.classList.contains("dark-theme")){
+					icon.src = "images/sun.png"
+				}else{
+					icon.src = "images/moon.png"
+				}
+			  }
+			});
+		  </script>
+
+		<!-- footer section ends -->
+          </body>
+
+        

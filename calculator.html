@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progressvie Web Application: MAD2</title>
+    <script src="service-worker.js"></script>
+    <link rel="manifest"  href="/manifest.json">
+    
+      
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/calculator.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- header section starts      -->
+
+<header class="header">
+  <a href="#" class="logo"> <span>PRIME</span>SURVIVAL</a>
+
+  <div id="menu-btn" class="fas fa-bars"></div>
+
+  <nav class="navbar">
+    <a href="home.html">home</a>
+    <a href="home.html">about</a>
+    <a href="home.html">trainers</a>
+    <a href="calculator.html">BMRcalculator</a>
+    <a href="workout.html">Workouts</a>
+    <a href="home.html">blogs</a>
+    <a href="index.php">Logout</a>
+  </nav>
+  <img src="images/moon.png" id="icon">
+</header>
+
+
+<body>
+
+    <!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="swiper home-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide" style="background: url(images/stock_footage_1.jpg) no-repeat;">
+                <div class="content">
+                    <span>Your Path to Fitness Excellence</span>
+                    <h3>Unlock Your Full Potential at Prime Survival</h3>
+                    <a href="#" class="btn">Join Now</a>
+                </div>
+            </div>
+
+
+</section>
+
+<div class="bmr-calculator">
+    <h2>BMR Calculator</h2>
+    <div class="controls">
+      <form>
+        <h3>Age (10 - 100)</h3>
+        <input type="text" id="age" value="28" />
+
+        <div class="gender">
+          <h3>Gender</h3>
+          <input type="radio" id="male" value="male" name="gender" checked />
+          <label for="male">Male</label>
+          <input type="radio" id="female" value="female" name="gender" />
+          <label for="female">Female</label>
+        </div>
+
+        <div class="height">
+          <h3>Height</h3>
+          <input type="text" id="height" value="180" />
+          <div class="unit">cm</div>
+        </div>
+
+        <div class="weight">
+          <h3>Weight</h3>
+          <input type="text" id="weight" value="65" />
+          <div class="unit">kg</div>
+        </div>
+      </form>
+    </div>
+
+    <div class="result">
+      <button class="calculate-btn">Calculate</button>
+
+      <div class="result-message">
+        <span class="calories">1,640</span> Calories/day
+      </div>
+
+      <div class="error-message">
+        <p>Please enter all the details correctly.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+    
+
+        <div class="box">
+            <h3>opening hours</h3>
+            <p> monday : <i> 5:00am - 10.00pm </i> </p>
+            <p> tuesday : <i> 5:00am - 10.00pm </i> </p>
+            <p> wednesday : <i> 5:00am - 10.00pm </i> </p>
+            <p> friday : <i> 5:00am - 10.00pm</i> </p>
+            <p> saturday : <i> 7:00am - 6.00pm </i> </p>
+            <p> sunday : <i> 7:00am - 6.00pm </i> </p>
+        </div>
+
+        <div class="box">
+            <h3>opening hours</h3>
+            <p> <i class="fas fa-phone"></i> +94 70 142 7434 </p>
+            <p> <i class="fas fa-phone"></i> +94 76 881 7891 </p>
+            <p> <i class="fas fa-envelope"></i> primesurvival@gmail.com </p>
+            <p> <i class="fas fa-map"></i> Colombo, Sri Lanka </p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <form action="">
+                <input type="email" name="" class="email" placeholder="enter your email" id="">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="credit"> created by <span>Chamuditha Siyambalapitiya</span> | Copyright 2023  </div>
+
+<script src="js/calculator.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+  window.addEventListener("DOMContentLoaded", function() {
+    var icon = document.getElementById("icon");
+  
+    icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+      icon.src = "images/sun.png"
+    }else{
+      icon.src = "images/moon.png"
+    }
+    }
+  });
+  </script>
+
+
+<!-- footer section ends -->

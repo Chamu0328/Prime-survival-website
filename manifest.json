@@ -1,0 +1,59 @@
+{
+    "name": "Prime Survival",
+    "short_name": "PrimeSurvival",
+    "start_url": "/login.php",
+    "display": "standalone",
+    "background_color": "#FFE9D2",
+    "theme_color": "#FFF1C4",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "images/icons/16x16.png",
+            "type": "image/png",
+            "sizes": "16x16"
+
+        },
+        {
+            "src": "images/icons/64x64.png",
+            "type": "image/png",
+            "sizes": "64x64"
+          
+        },
+        {
+            "src": "images/icons/89x89.png",
+            "type": "image/png",
+            "sizes": "89x89"
+            
+        },
+        {
+            "src": "images/icons/128x128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+            
+        },
+        {
+            "src": "images/icons/144x144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        
+        },
+        {
+            "src": "images/icons/192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+           
+        },
+        {
+            "src": "images/icons/310x310.png",
+            "type": "image/png",
+            "sizes": "310x310"
+           
+        },
+        {
+            "src": "images/icons/512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+           
+        }
+    ]
+}
